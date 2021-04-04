@@ -1,0 +1,36 @@
+.entry-404 {
+	padding-bottom: 85px;
+	text-align: center;
+}
+
+.entry-404-head {
+	color: #2f4666;
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 36px;
+}
+
+.entry-404-head span::after {
+	content: " ";
+}
+
+.entry-404-lead {
+	color: #808080;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 24px;
+}
+
+.entry-404-lead .m_sp {
+	display: none;
+}
+
+.entry-404-content {
+	color: #808080;
+}
+
+.entry-404-btn {
+	margin-top: 58px;
+}
+

@@ -1,0 +1,51 @@
+
+
+// base
+@import './base/base';
+@import './base/reset';
+
+/* ==================================================================================
+# 共通スタイル
+================================================================================== */
+
+// header
+@import './page/header';
+
+// footer
+@import './page/footer';
+
+@import './mixin/common';
+
+/* ==================================================================================
+# 各ページ
+================================================================================== */
+
+// index(フロントページ)
+@import './page/index';
+
+// page-concept(事業概要)
+@import './page/page-concept';
+
+// page-service(事業内容)
+@import './page/page-service';
+
+// page-news（投稿ページ一覧）
+@import'./page/page-news';
+
+// single-news(投稿ページ）
+@import './page/single-news';
+
+// single-news(投稿ページ）
+@import './page/category-news';
+
+//recruit(採用ページ)
+@import './page/recruit';
+
+// contact(お問い合わせ)
+@import './page/contact';
+
+// contact(お問い合わせ)
+@import './page/404';
+
+// contact(お問い合わせ)
+@import './page/pagenavigation';

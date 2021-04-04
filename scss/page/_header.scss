@@ -1,0 +1,115 @@
+/* ==================================================================================
+# header
+================================================================================== */
+.header {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  @include mq("sp") {
+    display: flex;
+  }
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  @include mq("sp") {
+    height: 80px;
+  }
+}
+
+.header__wrapper {
+}
+
+.header__logo {
+  width: 380px;
+  width: 25vw;
+  @include mq("sp") {
+    width: 300px;
+    img {
+      width: 50vw;
+    }
+  }
+  a {
+    transition: opacity 300ms ease;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+.header__nav {
+  margin-left: auto;
+}
+.nav__list {
+  @include mq("pc") {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  @include mq("sp") {
+    margin-top: 80px;
+    padding: 0 10px;
+  }
+}
+.nav__item {
+  &:not(:last-child) {
+    border-left: 1px solid #000;
+    a {
+      padding: 2px 28px;
+      display: block;
+      color: #000;
+      transition: opacity 300ms ease;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    @include mq("sp") {
+      border-left: none;
+    }
+  }
+  @include mq("sp") {
+    & + & {
+      margin-top: 20px;
+    }
+  }
+}
+.nav__item._email {
+  border: 1px solid #2f4666;
+  border-radius: 2.5px;
+  background-size: 13px;
+  position: relative;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .3s;
+  img {
+    width: 25px;
+    margin-right: 20px;
+  }
+}
+
+.drawer-hamburger-icon {
+  background-color: #2f4666 !important;
+  border-radius: 2px;
+  height: 5px;
+  .drawer-open & {
+    background: transparent;
+    height: 0;
+  }
+  &::before,
+  &::after {
+    height: 5px;
+    border-radius: 2px;
+    background-color: #2f4666 !important;
+  }
+}
+.drawer--right .drawer-hamburger {
+  right: 15px;
+  top: 10px;
+}

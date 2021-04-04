@@ -1,0 +1,70 @@
+// -----
+// page-contact
+// -----
+.page-contact {
+  background-color: #fff;
+}
+.page-contact__list {
+}
+.page-contact__item {
+  display: flex;
+  margin-top: 24px;
+  @include mq('sp'){
+  display:block;
+  margin-top: 10px;
+  }
+}
+.page-contact__item-title {
+  width: 40%;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+}
+.page-contact__item-inline {
+  font-size: 12px;
+  color: #ad9b81;
+  margin-left: 10px;
+  line-height: 1;
+}
+.page-contact__input-box {
+  width: 100%;
+  margin-left: 18px;
+  text-align: left;
+  @include mq("sp") {
+    margin-left: 0;
+  }
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  @include mq('pc'){
+    width: 70%;
+  }
+  @include mq('sp'){
+    width: 100%;
+  }
+  border: 0;
+  font-size: 16px;
+  padding: 0.2em 0.5em; //文字を読みすくする
+  border: 1px solid #2f4666;
+
+}
+input[type="text"],
+input[type="email"] {
+  height: 40px;
+}
+textarea {
+  height: 122px;
+  resize: vertical;
+}
+.page-contact .page-common__item {
+  border-bottom: none;
+}
+.page-contact .util__button {
+}
+.page-contact .util__button-link {
+  text-align: center;
+  &::after {
+    content: none;
+  }
+}

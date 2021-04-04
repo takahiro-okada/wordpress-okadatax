@@ -1,0 +1,172 @@
+.page-recruit{
+
+  // 各コンテンツの上下幅の調整
+  .page-common__item{
+    padding: 80px 0;
+    @include mq('sp'){
+    padding:40px 0;
+    }
+    &:not(:last-child){
+      border-bottom: 1px solid #333;
+    }
+  }
+  // 採用の流れ
+.page-common__item._flow {
+  .is-pc {
+    text-align: center;
+    img {
+      width: 100%;
+      @include mq('pc'){
+      margin-top: 12px;
+      }
+      @include mq("sp") {
+        max-width: 600px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+}
+
+
+
+
+// 募集要項
+
+.page-common__item._info {
+  @include mq('sp'){
+  border-bottom: none !important;
+  }
+  // 正社員の表示
+  .recruit-table-title {
+    background: #2f4666;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+  }
+  // 表
+  table {
+    display: flex;
+    width: 100%;
+  }
+  tr {
+  }
+  th {
+    font-weight: bold;
+    text-align: left;
+    padding: 15px 0 0 0;
+    width: 30%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    line-height: 2;
+    @include mq("sp") {
+      display: block;
+      text-align: left;
+      width: 100%;
+      border-bottom: none;
+      padding: 10px 0 10px 5px;
+    }
+  }
+  td {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    box-sizing: border-box;
+    @include mq("sp") {
+      display: block;
+      border-bottom: 1px dotted #ccc;
+      text-align: left;
+      width: 100%;
+      padding: 0 0 10px 5px;
+    }
+  }
+  td._pc {
+    width: 25%;
+  }
+}
+.page-recruit-span {
+  @include mq("sp") {
+    display: block;
+  }
+}
+.border-none {
+  width: 30%;
+  padding: 20px;
+  @include mq("sp") {
+    display: none !important;
+  }
+}
+// コンタクトフォーム
+.page-common__item._form{
+  .contact__list{
+  @include mq('pc'){
+    margin-top: -20px;
+  }
+  }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  width: 70%;
+  border: 0;
+  font-size: 16px;
+  padding: 0.2em 0.5em; //文字を読みすくする
+  border: 1px solid #2f4666;
+  @include mq('sp'){
+  width:100%;
+  }
+}
+
+}
+
+.contact__item {
+  display: flex;
+  margin-top: 24px;
+  &:last-child {
+    margin-top: 0;
+  }
+  @include mq("sp") {
+    display: block;
+    margin-top: 10px;
+  }
+}
+.contact__item-title {
+  width: 40%;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+}
+.contact__item-inline {
+  font-size: 12px;
+  color: #ad9b81;
+  margin-left: 10px;
+  line-height: 1;
+}
+.contact__input-box {
+  width: 100%;
+  margin-left: 18px;
+  text-align: left;
+  @include mq("sp") {
+    margin-left: 0;
+  }
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="email"] {
+  height: 40px;
+}
+textarea {
+  height: 122px;
+  resize: vertical;
+}
+.page-recruit .util__button-link {
+  margin-top: 20px;
+  @include mq('sp'){
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+// ブレイクポイント
+$breakpoints: (
+  "sp": "(max-width: 1024px)",
+  "pc": "(min-width: 1025px)",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+$font-color: #3e3e3e;
+$font-color-white: #fff;
+$primary-color: #2f4666;
+$sub-color: #ab9a80;
+$back-ground-black-color: #3e3e3e;
+$line-height-base: 1.6;
+
+/* ==================================================================================
+# 共通
+================================================================================== */
+body {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  line-height: $line-height-base;
+}
+
+@include mq("pc") {
+  .is-pc {
+    display: none;
+  }
+}
+
+@include mq("sp") {
+  .is-sp {
+    display: none;
+  }
+}

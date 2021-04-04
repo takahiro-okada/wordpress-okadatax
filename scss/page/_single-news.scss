@@ -1,0 +1,22 @@
+.single-post{
+  .news__list{
+
+  }
+  .news__item{
+    &:first-child{
+      padding: 50px 0;
+    }
+    &:hover{
+      opacity: 1;
+    }
+  }
+  .news__meta{
+    white-space: nowrap;
+  }
+  .news__main{
+    width: 100%;
+  }
+  .news__item-text{
+    line-height: 1.6;
+  }
+}
